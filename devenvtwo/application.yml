@@ -1,0 +1,32 @@
+activemq:
+    password: admin
+    url: failover:(localhost:61616)?timeout=1000&maxReconnectDelay=3000
+    user: admin
+database1:
+    datasource:
+        hostPortSchema: '@localhost:1521:orcl'
+    password: password
+    username: username
+database2:
+    datasource:
+        hostPortSchema: '@localhost:1521:orcl'
+    password: password
+    username: username
+jms:
+    ssl:
+        key-store: keystore
+        key-store-password: password
+        trust-store: trustStore
+        trust-store-password: ${router.jms.ssl.trust-store-password}
+serviceone:
+    password: password
+    url: https://sampleurl.com/serviceone
+    username: username
+servicethree:
+    password: password
+    url: https://sampleurl.com/servicethree
+    username: username
+servicetwo:
+    password: password
+    url: https://sampleurl.com/servicetwo
+    username: username

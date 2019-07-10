@@ -1,0 +1,10 @@
+logging:
+    file: serviceOne.log
+serviceone:
+    port: 9500
+spring:
+    profiles:
+        active: oracle,jmssslenabled
+user:
+    role: normal_user
+    

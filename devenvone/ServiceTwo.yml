@@ -1,0 +1,7 @@
+logging:
+    file: serviceTwo.log
+servicetwo:
+    port: 9100
+spring:
+    profiles:
+        active: oracle

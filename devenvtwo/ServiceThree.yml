@@ -1,0 +1,7 @@
+logging:
+    file: serviceThree.log
+servicethree:
+    port: 9300
+spring:
+    profiles:
+        active: oracle

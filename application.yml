@@ -1,0 +1,31 @@
+spring:
+    cloud:
+        config:
+            server:
+                git:
+                    clone-on-start: true
+database1:
+    datasource:
+        hostPortSchema: '@localhost:1521:orcl'
+    password: password
+    username: username
+database2:
+    datasource:
+        hostPortSchema: '@localhost:1521:orcl'
+    password: password
+    username: username
+endpoints:
+    logfile:
+        sensitive: true
+    shutdown:
+        enabled: true
+management:
+    context-path: /admin
+    info:
+        git:
+            mode: full
+    security:
+        enabled: true
+        user:
+            name: admin
+            password: admin

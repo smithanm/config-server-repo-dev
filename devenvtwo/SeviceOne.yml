@@ -1,0 +1,9 @@
+logging:
+    file: serviceOne.log
+resend:
+    max-resend-at-once: ${router.resend.max-resend-at-once}
+serviceone:
+    port: 9500
+spring:
+    profiles:
+        active: oracle,jmssslenabled
